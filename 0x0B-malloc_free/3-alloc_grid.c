@@ -21,7 +21,7 @@ return (NULL);
 }
 for (x = 0; x < height; x++)
 {
-me[x] = malloc(sizeof(int) width);
+me[x] = malloc(sizeof(int) * width);
 if (me[x] == NULL)
 {
 for (; x >= 0; x--)
@@ -40,4 +40,4 @@ me[x][y] = 0;
 }
 }
 return (me);
-};
+}
