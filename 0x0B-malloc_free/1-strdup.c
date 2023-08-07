@@ -1,9 +1,13 @@
-#include <stdio.h> #include <stdlib.h> #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
 *_strdup - duplicate to new memory space location
-* Ostr: char
+* @str: char
 *Return: 0
-/*
+*/
 char *_strdup(char *str)
+{
 char *aaa;
 int i, r;
 r = 0;
