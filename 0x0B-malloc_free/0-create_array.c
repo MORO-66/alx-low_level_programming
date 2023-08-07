@@ -20,7 +20,7 @@ if (arr == NULL)
 return (NULL);
 }
 
-int i;
+unsigned int i;
 for (i = 0; i < size; i++)
 {
 arr[i] = c;
