@@ -28,7 +28,7 @@ for (; x >= 0; x--)
 {
 free(me[x]);
 }
-free (me);
+free(me);
 return (NULL);
 }
 }
