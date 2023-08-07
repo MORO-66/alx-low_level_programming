@@ -13,8 +13,9 @@ if (size == 0)
 {
 return (NULL);
 }
+char *arr;
 unsigned int i;
-char *arr = (char *)malloc(size * sizeof(char));
+arr = (char *)malloc(size * sizeof(char));
 if (arr == NULL)
 {
 return (NULL);
