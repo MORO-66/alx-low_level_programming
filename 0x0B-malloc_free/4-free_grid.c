@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-* free grid frees 2d array
+* free_grid frees 2d array
 *@grid: 2d grid
 *@height: height dimension of grid
 *Description: frees memory of grid
@@ -15,5 +15,5 @@ for (i = 0; i < height; i++)
 {
 free(grid[i]);
 }
-free (grid);
+free(grid);
 }
