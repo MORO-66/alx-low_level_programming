@@ -17,7 +17,7 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-i = C1 = 0;
+i = c1 = 0;
 while (s1[i] != '\0')
 {
 i++;
@@ -38,7 +38,7 @@ conct[i] = s1[i];
 i++;
 }
 while (s2[ci] != '\0')
-}
+{
 conct[i] = s2[ci];
 i++, ci++;
 }
