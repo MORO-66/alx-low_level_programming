@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-* *malloc_checkedb - allocates memory using mall
+*malloc_checkedb - allocates memory using mall
 *@b: number of bytes to allocate
 * Return: a pointer to the allocated memory
 */
