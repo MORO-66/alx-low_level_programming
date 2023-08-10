@@ -1,4 +1,5 @@
-#include <stdlib.h> #include "main.h"
+#include <stdlib.h>
+#include "main.h"
 /**
 * *_realloc - reallocates a memory block using malloc and free
 * @ptr: pointer to the memory previsouly allocated by mallo
