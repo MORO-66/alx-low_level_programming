@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 /**
 *malloc_checkedb - allocates memory using mall
