@@ -71,7 +71,7 @@ for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 digit2 = s2[len2] - '0';
 carry += result[len1 + len2 + 1] + (digit1 *digit2);
 result[len1 + len2 + 1] = carry % 10;
-carry /= 10;
+carry /= 100;
 }
 if (carry > 0)
 result[len1 + len2 + 1] += carry;
@@ -83,7 +83,7 @@ if (a)
 _putchar(result[i] + '0');
 }
 if (!a)
-//_putchar('0');
+_putchar('0');
 _putchar('\n');
 free(result);
 return (0);
