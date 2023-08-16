@@ -3,8 +3,8 @@
 /**
 * int_infex - check if a number is equal to 98
 * @array: the integer to check
-*@ size: size
-*@cmp
+*@size: size
+*@cmp: fun
 * Return: 0 if false, something else otherwise.
 */
 
