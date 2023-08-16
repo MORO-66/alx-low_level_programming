@@ -29,7 +29,7 @@ return (a - b);
 *op_mul - return
 *@a: a
 *@b: b
-* 
+*
 *Return: the
 */
 int op_mul(int a, int b)
