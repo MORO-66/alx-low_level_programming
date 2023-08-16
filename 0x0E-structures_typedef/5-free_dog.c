@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
-*free dog - frees yo dawgs
+*free_dog - frees yo dawgs
 *@d: yo dawg
 *Return: void.
 */
