@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
-* int_infex - check if a number is equal to 98
+* int_index - check if a number is equal to 98
 * @array: the integer to check
 *@size: size
 *@cmp: fun
