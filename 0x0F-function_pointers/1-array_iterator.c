@@ -5,7 +5,7 @@
 * array_iterator - prints an integer
 * @array: the integer to print
 *@size: size
-*action: sdf
+*@action: sdf
 * Return: Nothing.
 */
 
