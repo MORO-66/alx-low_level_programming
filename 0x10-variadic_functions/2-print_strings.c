@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 /**
-* print_strings - check the code
-*@separator:mn elesm
-*@n:not yet
-* Return: Always 0.
+ * print_strings - prints strings with separator
+ * @separator: the separator between strings
+ * @n: number of strings to print
+ * @...: variable number of strings
+* Return: Always void
 */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 int i;
-va_list counterptr;
+va_list args;
 char *str;
 if (separator == NULL)
 return;
-va_start(counterptr, separator);
+va_start(args, n);
 for (i = 0; i < (int) n; i++)
 {
 str = va_arg(counterptr, char *);
