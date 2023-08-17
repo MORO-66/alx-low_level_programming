@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_strings - prints strings with separator
- * @separator: the separator between strings
- * @n: number of strings to print
- * @...: variable number of strings
+* print_strings - prints strings with separator
+* @separator: the separator between strings
+* @n: number of strings to print
+* @...: variable number of strings
 * Return: Always void
 */
 void print_strings(const char *separator, const unsigned int n, ...)
