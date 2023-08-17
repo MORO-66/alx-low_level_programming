@@ -13,9 +13,9 @@ va_list counterptr;
 if (n == 0)
 return (0);
 va_start(counterptr, n);
-for (i = 0; i < (int) n;i++)
+for (i = 0; i < (int) n; i++)
 {
-sum += va_arg(counterptr,int);
+sum += va_arg(counterptr, int);
 }
 va_end(counterptr);
 return (sum);
