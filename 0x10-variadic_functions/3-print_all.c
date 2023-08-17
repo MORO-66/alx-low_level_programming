@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 /**
 * format_char formats character
 *@separator: the string seprator
@@ -15,10 +16,10 @@ printf("%s%c", separator, va_arg(ap, int));
 */
 void format_int(char *separator, va_list ap)
 {
-printf("%s %d", separator, va_arg(ap, int));
+printf("%s%d", separator, va_arg(ap, int));
 }
 /**
- * format_float formats float
+* format_float formats float
 *@separator: the string seprator
 *@ap: argument pointer
 */
@@ -35,13 +36,11 @@ printf("%s%f", separator, va_arg(ap, double));
 void format_string(char *separator, va_list ap)
 {
 char *str = va_arg(ap, char *);
-switch ((int)(!str))
-case 1:
-str = "(nil)";
+str = (str == NULL) ? "(nil)" : str;
 printf("%s%s", separator, str);
 }
 /**
- * print_all prints anything
+* print_all prints anything
 *@format: the format string
 */
 void print_all(const char* const format, ...)
@@ -49,9 +48,12 @@ void print_all(const char* const format, ...)
 int i = 0, j;
 char *separator = "";
 va_list ap;
-token_t tokens [] = {
-{"c", format_char}, {"i", format_int},
-{"f", format_float}, {"s", format_string}, {NULL, NULL}
+token_t tokens[] = {
+{"c", format_char},
+{"i", format_int},
+{"f", format_float},
+{"s", format_string},
+{NULL, NULL}
 };
 va_start(ap, format);
 while (format && format[i])
