@@ -18,7 +18,7 @@ return;
 va_start(args, n);
 for (i = 0; i < (int) n; i++)
 {
-str = va_arg(counterptr, char *);
+str = va_arg(args, char *);
 if (str == NULL)
 printf("nil");
 else
@@ -28,5 +28,5 @@ return;
 printf("%s", separator);
 }
 
-va_end(counterptr);
+va_end(args);
 }
