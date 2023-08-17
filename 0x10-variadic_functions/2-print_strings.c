@@ -2,31 +2,25 @@
 #include <stdio.h>
 
 /**
- * print_strings - prints strings with separator
- * @separator: the separator between strings
- * @n: number of strings to print
- * @...: variable number of strings
+* print_strings - prints strings with separator
+* @separator: the separator between strings
+* @n: number of strings to print
+* @...: variable number of strings
 * Return: Always void
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-int i;
+int i = n;
 va_list args;
 char *str;
-if (separator == NULL)
-return;
-va_start(args, n);
-for (i = 0; i < (int) n; i++)
+if (!n)
 {
-str = va_arg(args, char *);
-if (str == NULL)
-printf("nil");
-else
-printf("%s", str);
-if (i == (int) n - 1)
+printf("\n");
 return;
-printf("%s", separator);
 }
-
+va_start(args, n);
+while (i--)
+printf("%s%s", (str = va_arg(args, char *)) ? str : "(nil)",
+i ? (separator ? separator : "") : "\n");
 va_end(args);
 }
