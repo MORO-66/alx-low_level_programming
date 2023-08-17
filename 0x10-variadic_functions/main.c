@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    print_strings(", ", 2,"sd","sdaf");
+    print_all("ceis", 'B');
     return (0);
 }

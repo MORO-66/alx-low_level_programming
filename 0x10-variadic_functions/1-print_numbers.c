@@ -9,17 +9,17 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-int i ;
+int i;
 va_list counterptr;
 if (separator == NULL)
 return;
 va_start(counterptr, n);
-for (i = 0; i < (int) n;i++)
+for (i = 0; i < (int) n; i++)
 {
-printf("%d",va_arg(counterptr, int));
+printf("%d", va_arg(counterptr, int));
 if (i == (int) n - 1)
 return;
-printf("%s",separator);
+printf("%s", separator);
 }
 va_end(counterptr);
 }
