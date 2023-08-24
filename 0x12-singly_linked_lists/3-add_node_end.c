@@ -1,4 +1,4 @@
-#inclide "lists.h"
+#include "lists.h"
 
 /**
  * add_node_end - obv
@@ -18,7 +18,7 @@ new = malloc(sizeof(list_t));
 if (!new)
 	return (NULL);
 
-new->Str = strdup(str);
+new->str = strdup(str);
 new->len = len;
 new->next = NULL;
 
