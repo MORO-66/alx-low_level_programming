@@ -12,6 +12,6 @@ listint_t *tmp;
 unsigned int i;
 tmp = head;
 for (i = 0; tmp && i < index; i++)
-node = node->next;
-return (node);
+tmp = tmp->next;
+return (tmp);
 }
