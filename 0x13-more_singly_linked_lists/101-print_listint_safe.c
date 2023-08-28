@@ -48,7 +48,7 @@ return (num);
 num++;
 list =_re(list, num, head);
 printf("[%p] %d\n", (void *)head, head->n);
-head head->next;
+head = head->next;
 }
 free(list);
 return (num);
