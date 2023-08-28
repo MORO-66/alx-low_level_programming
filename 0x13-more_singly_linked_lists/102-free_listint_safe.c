@@ -7,7 +7,7 @@
 listint_t *find_listint_loop_fl(listint_t *head)
 {
 listint_t *ptr, *end;
-if (head = NULL)
+if (head == NULL)
 return (NULL);
 for (end = head->next; end != NULL; end = end->next)
 {
@@ -51,6 +51,8 @@ free((*h)->next);
 loop = 0;
 }
 free(*h);
+}
 *h = NULL;
 return (len);
 }
+
