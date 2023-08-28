@@ -24,13 +24,14 @@ free(list);
 return (newlist);
 }
 
-﻿/**
+/**
 *print_listint_safe - to
 *@head: h
 *Return: size_t
 */
 
 size_t print_listint_safe(const listint_t *head)
+{
 size_t i, num = 0;
 const listint_t **list = NULL;
 while (head != NULL)
