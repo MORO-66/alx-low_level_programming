@@ -17,5 +17,5 @@ while (tmp)
 n += tmp->n;
 tmp = tmp->next;
 }
-
+return (n);
 }
