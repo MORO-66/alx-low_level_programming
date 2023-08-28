@@ -6,7 +6,8 @@
 * @new: new node to add to the list
 * Return: pointer to the new list
 */
-const listint_t **_re(const listint_t **list, size_t size, const listint_t *new)
+const listint_t **_re(const listint_t **list, size_t size,
+const listint_t *new)
 {
 const listint_t **newlist;
 size_t i;
@@ -46,7 +47,7 @@ return (num);
 }
 }
 num++;
-list =_re(list, num, head);
+list = _re(list, num, head);
 printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
