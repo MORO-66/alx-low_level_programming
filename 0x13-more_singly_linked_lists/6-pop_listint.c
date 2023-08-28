@@ -12,8 +12,8 @@ int n;
 if (!head || !*head)
 return (0);
 
-temp = head->next;
-n = head->n;
+temp = (*head)->next;
+n = (*head)->n;
 free(*head);
 *head = temp;
 return (n);
