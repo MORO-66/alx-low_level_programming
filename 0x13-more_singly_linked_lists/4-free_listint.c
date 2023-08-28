@@ -3,19 +3,18 @@
 
 
 /**
- * free_list - free
- * @head: h
- * Return: void
- */
+* free_listint - free
+* @head: h
+* Return: void
+*/
 void free_listint(listint_t *head)
 {
-	listint_t *temp;
+listint_t *temp;
 
-	while (head)
-	{
-		temp = head->next;
-		free(head);
-		head = temp;
-	}
-
+while (head)
+{
+temp = head->next;
+free(head);
+head = temp;
+}
 }
