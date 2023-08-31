@@ -4,12 +4,12 @@
 *@n: the number to print
 *Return: void
 */
-void print_binary (unsigned long int n)
+void print_binary(unsigned long int n)
 {
-int bit = sizeof(n) = 8, printed = 0;
+int bit = sizeof(n) * 8, printed = 0;
 while (bit)
 {
-if (n & 1L <<< --bit)
+if (n & 1L << --bit)
 {
 _putchar ('1');
 printed++;
