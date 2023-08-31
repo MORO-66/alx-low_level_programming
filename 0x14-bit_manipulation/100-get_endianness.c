@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* get_endianness gets the bit at the index
+* get_endianness - gets the bit at the index
 *Return: the bit state or -1 on error
 */
 int get_endianness(void)
