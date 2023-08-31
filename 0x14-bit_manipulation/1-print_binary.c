@@ -4,7 +4,7 @@
 *@n: the number to print
 *Return: void
 */
-void print_binary (unsigned long int n)
+void print_binary(unsigned long int n)
 {
 int bit = sizeof(n) * 8, printed = 0;
 while (bit)
