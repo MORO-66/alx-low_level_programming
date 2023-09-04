@@ -34,9 +34,9 @@ dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 from_fd = close(from_fd);
 to_fd = close(to_fd);
 if (from_fd)
-dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
+dprintf(STDERR_FILENO, from_fd), exit(100);
 if (to_fd)
-dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
+dprintf(STDERR_FILENO, from_fd), exit(100);
 
 return (EXIT_SUCCESS);
 }
