@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*read_textfile - fun 
+*read_textfile - fun
 *
 *@filename: it
 *@letters:l
