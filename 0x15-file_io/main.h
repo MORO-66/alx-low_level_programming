@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#degine READ_BUF_SIZE 1024
+#define READ_BUF_SIZE 1024
 
 int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
