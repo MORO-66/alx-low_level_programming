@@ -12,10 +12,10 @@ size_t print_dlistint(const dlistint_t *h)
 
     while (h)
     {
-        printf("%d\n", h->n);  // Print the data of the current node
-        h = h->next;           // Move to the next node
-        i++;                   // Increment the counter
+        printf("%d\n", h->n);
+        h = h->next;
+        i++;
     }
 
-    return (i);  // Return the size of the list
+    return (i);
 }
