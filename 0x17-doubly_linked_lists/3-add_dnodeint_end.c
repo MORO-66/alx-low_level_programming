@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-*add_dnodeint – prints doubly-linked list
+*add_dnodeint_end – prints doubly-linked list
 *@head: address of head node
 *@n: mmm
 *Return: size of list
@@ -10,7 +10,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 dlistint_t *new = malloc(sizeof(dlistint_t)), *node;
 if (!head || !new)
-return (new ? free(new), NULL: NULL);
+return (new ? free(new), NULL : NULL);
 new->n = n;
 new->next = NULL;
 if (!*head)
