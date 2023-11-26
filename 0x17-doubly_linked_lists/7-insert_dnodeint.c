@@ -15,7 +15,7 @@ dlistint_t *tmp = *h, *new;
 if (idx == 0)
 return (add_dnodeint(h, n));
 
-for (:idx != 1; idx--)
+for (; idx != 1; idx--)
 {
 tmp = tmp->next;
 if (tmp == NULL)
